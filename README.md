@@ -13,8 +13,9 @@
 ## ❗Recursos utilizados
 
 - .editorconfig
+- Path Mapping
 
-## ❗Como este projeto foi criado
+## ❗Como este projeto foi construído
 
 1. Comando de construção/criação de um projeto usando o `expo cli`:
 
@@ -25,3 +26,72 @@
   > __TEMPLATE:__ `Managed workflow` em `blank (TypeScript)`
 
 1. A imagem da logo foi exportada diretamente pelo `Figma` com os sufixos `default`, `@2x` e `@3x` e adicionada na pasta `src/assets` no formato `.png`
+
+1. Realizado o Path Mapping com a biblioteca [🔗 `babel-plugin-module-resolver`](https://github.com/tleunen/babel-plugin-module-resolver):
+
+    ```sh
+      npm install --save-dev babel-plugin-module-resolver
+    ```
+
+    > babel.config.js:
+
+    ```js
+      module.exports = function (api) {
+        api.cache(true);
+        return {
+          presets: ['babel-preset-expo'],
+          plugins: [
+            [
+              'module-resolver',
+              {
+                root: ['./src'],
+                alias: {
+                  '@assets': './src/assets',
+                  '@components': './src/components',
+                  '@routes': './src/routes',
+                  '@screens': './src/screens',
+                  '@storage': './src/storage',
+                  '@theme': './src/theme',
+                  '@utils': './src/utils',
+                }
+              }
+            ]
+          ]
+        };
+      };
+    ```
+
+    > tsconfig.json:
+
+    ```json
+      {
+        "extends": "expo/tsconfig.base",
+        "compilerOptions": {
+          "strict": true,
+          "baseUrl": "./",
+          "paths": {
+            "@assets/*": [
+              "./src/assets/*"
+            ],
+            "@components/*": [
+              "./src/components/*"
+            ],
+            "@routes/*": [
+              "./src/routes/*"
+            ],
+            "@screens/*": [
+              "./src/screens/*"
+            ],
+            "@storage/*": [
+              "./src/storage/*"
+            ],
+            "@theme/*": [
+              "./src/theme/*"
+            ],
+            "@utils/*": [
+              "./src/utils/*"
+            ]
+          }
+        }
+      }
+    ```
