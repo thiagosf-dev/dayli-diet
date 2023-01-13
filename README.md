@@ -23,3 +23,5 @@
   ```
 
   > __TEMPLATE:__ `Managed workflow` em `blank (TypeScript)`
+
+1. A imagem da logo foi exportada diretamente pelo `Figma` com os sufixos `default`, `@2x` e `@3x` e adicionada na pasta `src/assets` no formato `.png`
