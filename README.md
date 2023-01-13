@@ -8,12 +8,17 @@
 
 ## ❗Tecnologias usadas
 
-> [🔗 `React`](https://pt-br.reactjs.org/) | [🔗 `React Native`](https://reactnative.dev/) | [🔗 `Typescript`](https://devdocs.io/typescript/) | [🔗 `Expo`](https://docs.expo.dev/) | [🔗 `Styled Component`](https://styled-components.com/)
+> [🔗 `React`](https://pt-br.reactjs.org/) | [🔗 `React Native`](https://reactnative.dev/) | [🔗 `Typescript`](https://devdocs.io/typescript/) | [🔗 `Expo`](https://docs.expo.dev/) | [🔗 `Styled Components`](https://styled-components.com/)
 
 ## ❗Recursos utilizados
 
 - .editorconfig
 - Path Mapping
+- Alias de Importação
+- Default Themes
+- Themes Provider
+- Fonts Loader
+- ActivityIndicator
 
 ## ❗Como este projeto foi construído
 
@@ -94,4 +99,20 @@
           }
         }
       }
+    ```
+
+1. Instalação e configuração do `styled-components` e suas tipagens:
+
+    ```sh
+      npm install --save styled-components
+    ```
+
+    ```sh
+      npm install --save-dev @types/styled-components @types/styled-components-react-native
+    ```
+
+1. Instalação da fonte `Nunito Sans`:
+
+    ```sh
+      expo install @expo-google-fonts/nunito-sans expo-font expo-app-loading
     ```
