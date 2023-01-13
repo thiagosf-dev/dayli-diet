@@ -2,12 +2,13 @@
 
 🔰 Aplicação Mobile (React Native) do desafio 02 do Ignite da Rocketseat
 
+  🔗 [requisitos](https://efficient-sloth-d85.notion.site/Desafio-02-Daily-Diet-98b7d85ec7e9428aa0f9f3bceed4380f)
+
+  🔗 [protótipo](https://www.figma.com/file/KE3ZA17HLAzs1YL0EQbAoS/Daily-Diet-(Copy)?node-id=0%3A1&t=T4B71NxOS3JnGdhb-0)
+
 ## ❗Tecnologias usadas
 
-- React
-- React Native
-- Typescript
-- Expo
+> [🔗 `React`](https://pt-br.reactjs.org/) | [🔗 `React Native`](https://reactnative.dev/) | [🔗 `Typescript`](https://devdocs.io/typescript/) | [🔗 `Expo`](https://docs.expo.dev/) | [🔗 `Styled Component`](https://styled-components.com/)
 
 ## ❗Recursos utilizados
 
