@@ -198,3 +198,17 @@
     ```
 
 ## 🤳 Algumas telas do aplicativo
+
+![image](https://user-images.githubusercontent.com/40807160/215308823-90ce1e04-1cc2-4e72-ae8b-a13cf15848cd.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308851-745c2b15-21ba-4e76-bca7-7f08360ff681.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308862-65862d72-2d18-40ac-88ff-63aa85e18701.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308902-bf2bf776-8206-4679-8c4f-b8a21523a576.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308916-beafb82c-51df-4066-9117-f3b265d39ec5.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308930-304fbfaf-a1f8-484d-b995-7ab247b722d6.png)
+
+![image](https://user-images.githubusercontent.com/40807160/215308939-d3f560b9-3c99-4f9b-80d2-bb036f35039f.png)
