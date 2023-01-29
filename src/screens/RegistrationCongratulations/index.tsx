@@ -1,9 +1,14 @@
 import InsideDietaImage from '@assets/inside-dieta-image.png'
-import { Button } from '@components/Button'
-import { Text } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import * as S from './styles'
 
-export const RegistrationDone = () => {
+export const RegistrationCongratulations = () => {
+  const navigation = useNavigation()
+
+  function handleHomeNavigate() {
+    navigation.navigate('home')
+  }
+
   return (
     <S.Container>
       <S.Header>
@@ -20,7 +25,7 @@ export const RegistrationDone = () => {
 
       <S.Image source={InsideDietaImage} />
 
-      <S.Button>
+      <S.Button onPress={handleHomeNavigate}>
         <S.ButtonText>
           {"Ir para a página inicial"}
         </S.ButtonText>

@@ -25,6 +25,14 @@ export const FormAddFood = () => {
     navigation.navigate('home')
   }
 
+  function handleRegistrationCongratulationsNavigate() {
+    navigation.navigate('registrationCongratulations')
+  }
+
+  function handleRegistrationAlertNavigate() {
+    navigation.navigate('registrationAlert')
+  }
+
   function handleYesButtonSetFoodType() {
     setYesButton(true)
     setNotButton(false)
@@ -55,18 +63,11 @@ export const FormAddFood = () => {
   }
 
   async function handleAddFood() {
-    validations(food)
+    // validations(food)
 
     if (selectedFood && food.id) {
       try {
         await foodUpdate(food)
-        Alert.alert(
-          'Sucesso',
-          'A refeição foi alterada com sucesso.',
-          [
-            { text: 'OK', onPress: () => handleHomeNavigate() }
-          ]
-        )
       } catch (error) {
         console.error(error)
       }
@@ -79,13 +80,6 @@ export const FormAddFood = () => {
       try {
         Keyboard.dismiss()
         foodCreate(newFood)
-        Alert.alert(
-          'Sucesso',
-          'A refeição foi registrada com sucesso.',
-          [
-            { text: 'OK', onPress: () => handleHomeNavigate() }
-          ]
-        )
       } catch (error) {
         if (error instanceof AppError) {
           return Alert.alert(
@@ -98,6 +92,9 @@ export const FormAddFood = () => {
     }
 
     foodSequenceInfoUpdate(food.status === 'YES')
+    food.status === 'YES' ?
+      handleRegistrationCongratulationsNavigate() :
+      handleRegistrationAlertNavigate()
   }
 
   useEffect(() => {

@@ -6,7 +6,8 @@ export declare global {
       home: undefined
       food: FoodModel
       formAddFood?: FoodModel
-      registrationDone: undefined
+      registrationCongratulations: undefined
+      registrationAlert: undefined
       statistics: undefined
     }
   }

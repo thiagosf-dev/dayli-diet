@@ -2,7 +2,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Food } from "@screens/Food";
 import { FormAddFood } from "@screens/FormAddFood";
 import { Home } from "@screens/Home";
-import { RegistrationDone } from "@screens/RegistrationDone";
+import { RegistrationAlert } from "@screens/RegistrationAlert";
+import { RegistrationCongratulations } from "@screens/RegistrationCongratulations";
 import { Statistics } from "@screens/Statistics";
 
 const { Navigator, Screen } = createNativeStackNavigator()
@@ -29,8 +30,13 @@ export const AppRoutes = () => {
       />
 
       <Screen
-        name={'registrationDone'}
-        component={RegistrationDone}
+        name={'registrationCongratulations'}
+        component={RegistrationCongratulations}
+      />
+
+      <Screen
+        name={'registrationAlert'}
+        component={RegistrationAlert}
       />
 
       <Screen

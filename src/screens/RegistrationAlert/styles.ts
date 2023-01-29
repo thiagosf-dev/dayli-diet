@@ -25,7 +25,7 @@ export const HeaderTitle = styled.Text`
 `
 
 export const HeaderSubtitle = styled.Text`
-  height: 21px;
+  width: 327px;
   text-align: center;
   ${({ theme }) => css`
     color: ${theme.COLORS.GRAY_100};
