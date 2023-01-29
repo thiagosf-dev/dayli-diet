@@ -196,7 +196,13 @@
     ```sh
       npx expo install @react-native-async-storage/async-storage
     ```
-
+    
+## 🕷️ O que faltou (bugs)
+  
+  1. A listagem de refeições não está fazendo o scroll.
+  
+  1. Não está sendo validado os campos Data e Hora no cadastro de refeição, os campos estão abertos para serem digitados quaisquer texto.
+  
 ## 🤳 Algumas telas do aplicativo
 
 ![image](https://user-images.githubusercontent.com/40807160/215308823-90ce1e04-1cc2-4e72-ae8b-a13cf15848cd.png)
